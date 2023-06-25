@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 import subprocess
-import time
+import sys
 import random
+import time
 
 from rich.console import Console
 from rich.panel import Panel
@@ -23,7 +24,6 @@ verses = {
     }
 }
 
-
 def count_down(t: any) -> None:
     console = Console()
     with Progress() as progress:
@@ -32,6 +32,7 @@ def count_down(t: any) -> None:
         while not progress.finished:
             progress.update(task1, advance=1)
             time.sleep(1)
+
     console.print("\n")
 
 
@@ -53,8 +54,13 @@ def active_window() -> None:
 
 
 def main() -> None:
-    val = input("Enter the number of minutes: ")
-    count_down(int(val) * 60)
+    try:
+        val = input("Enter the number of minutes: ")
+        count_down(int(val) * 60)
+    except KeyboardInterrupt:
+        # Signal can not handler sleep
+        sys.exit(0)
+
     active_window()
     print_quotes()
 

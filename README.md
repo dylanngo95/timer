@@ -1,23 +1,23 @@
-# Timer
+# Buddhist Timer
 Timer tool help people get away from the computer.
 
 ## How to set up?
 ```bash
 # Make sure your computer installed python3 and pip3
 
-pip install timer
+pip install btimer
 ```
 
 ## How to use?
 ```bash
 # Open a new command line
 
-timer
+btimer
 
 # Enter number of minutes
 ```
 
-![Timer img 01](doc%2Fimg01.png)
+![BTimer](https://github.com/dylanngo95/timer/blob/e7fa05a90b6f27e5590ae389f0aaf4e43bd70156/doc/img01.png?raw=true)
 
 ## How to build?
 
