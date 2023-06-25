@@ -1,11 +1,17 @@
 # Buddhist Timer
 Timer tool help people get away from the computer.
 
+[BTimer documentation in the https://pypi.org](https://pypi.org/project/btimer/)
+
 ## How to set up?
 ```bash
 # Make sure your computer installed python3 and pip3
 
 pip install btimer
+
+#or
+
+pip3 install btimer
 ```
 
 ## How to use?
