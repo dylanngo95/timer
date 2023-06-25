@@ -35,3 +35,9 @@ python -m build
 # Install python tool in the local
 pip install .
 ```
+
+## Reference
+```bash
+
+https://pypi.org/project/setuppy-generator/
+```
