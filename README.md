@@ -3,7 +3,8 @@ Timer tool help people get away from the computer.
 
 ## How to set up?
 ```bash
-# Make sure your computer installed python 3 and pip3
+# Make sure your computer installed python3 and pip3
+
 pip install timer
 ```
 

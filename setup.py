@@ -15,7 +15,7 @@ setuptools.setup(
 
     description="Help people get away from the computer",
 
-    url="https://github.com/dylanops/timer.git",
+    url="https://github.com/dylanngo95/timer",
 
     license_files='LICENSE.txt',
 
