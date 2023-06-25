@@ -35,7 +35,7 @@ def count_down(t: any) -> None:
     console.print("\n")
 
 
-def print_quotes():
+def print_quotes() -> None:
     console = Console()
 
     randint = random.randint(0, 2)
@@ -52,9 +52,9 @@ def active_window() -> None:
     subprocess.call("osascript -e '{}'".format(applescript), shell=True)
 
 
-def main():
-    val = input("Enter the number of seconds: ")
-    count_down(int(val))
+def main() -> None:
+    val = input("Enter the number of minutes: ")
+    count_down(int(val) * 60)
     active_window()
     print_quotes()
 
