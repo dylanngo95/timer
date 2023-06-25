@@ -17,7 +17,7 @@ btimer
 # Enter number of minutes
 ```
 
-![BTimer](https://github.com/dylanngo95/timer/blob/e7fa05a90b6f27e5590ae389f0aaf4e43bd70156/doc/img01.png?raw=true)
+![BTimer](https://github.com/dylanngo95/timer/blob/main/doc/img01.png?raw=true)
 
 ## How to build?
 
