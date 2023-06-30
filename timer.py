@@ -4,25 +4,12 @@ import subprocess
 import sys
 import random
 import time
+import json
 
 from rich.console import Console
 from rich.panel import Panel
 from rich.progress import Progress
 
-verses = {
-    0: {
-        'quote': 'Self love brings happiness.',
-        'author': 'Thich Nhat Hanh'
-    },
-    1: {
-        'quote': 'There is no way to happiness, happiness is the way.',
-        'author': 'Thich Nhat Hanh'
-    },
-    2: {
-        'quote': 'Happiness is in the here and now.',
-        'author': 'Thich Nhat Hanh'
-    }
-}
 
 def count_down(t: any) -> None:
     console = Console()
@@ -36,10 +23,16 @@ def count_down(t: any) -> None:
     console.print("\n")
 
 
+def read_json():
+    f = open('verses.json')
+    return json.load(f)
+
+
 def print_quotes() -> None:
     console = Console()
 
     randint = random.randint(0, 2)
+    verses = read_json()
     quote = verses[randint]
     console.print(Panel(""" "{}" - {} """.format(quote['quote'], quote['author']), title="Verses"))
 

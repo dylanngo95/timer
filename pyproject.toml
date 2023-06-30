@@ -1,6 +1,6 @@
 [project]
 name = "btimer"
-version = "1.0.6"
+version = "1.0.7"
 authors = [
   { name="Dylan Ngo", email="it.tinhngo@gmail.com" },
 ]
