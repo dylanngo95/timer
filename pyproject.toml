@@ -22,6 +22,9 @@ btimer = "timer:main"
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
+[tool.setuptools]
+include-package-data = true
+
 [project.urls]
 "Homepage" = "https://github.com/dylanngo95/timer"
 "Bug Tracker" = "https://github.com/dylanngo95/timer/issues"
