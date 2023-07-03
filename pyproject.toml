@@ -1,6 +1,18 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["btimer"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
 [project]
 name = "btimer"
-version = "1.0.8"
+version = "1.0.9"
 authors = [
   { name="Dylan Ngo", email="it.tinhngo@gmail.com" },
 ]
@@ -17,13 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-btimer = "timer:main"
-
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
-
-[tool.setuptools]
-include-package-data = true
+btimer = "btimer:main"
 
 [project.urls]
 "Homepage" = "https://github.com/dylanngo95/timer"
