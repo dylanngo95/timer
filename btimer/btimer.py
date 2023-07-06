@@ -5,6 +5,7 @@ import sys
 import random
 import time
 import json
+import site
 
 from rich.console import Console
 from rich.panel import Panel
@@ -24,7 +25,8 @@ def count_down(t: any) -> None:
 
 
 def read_json():
-    f = open('verses.json')
+    path = "{}/{}/{}".format(site.getsitepackages()[0], 'btimer', 'verses.json')
+    f = open(path)
     return json.load(f)
 
 
